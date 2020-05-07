@@ -27,7 +27,7 @@ our app with the latest changes.
 ```
 docker run  -it --rm \
             -e APP_ID=abc \
-            -e PRIVATE_KEY=none \
+            -e PRIVATE_KEY= \
             -w /home/node/my-probot-dev \
             -v "$(pwd)":/home/node/my-probot-dev \
             -p 3000:3000 my-probot \
