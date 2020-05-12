@@ -64,7 +64,6 @@ jobs:
       install: skip
       script:
         - docker run --rm $DOCKER_USERNAME/my-probot:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
-      if: branch = master
       env:
         - NODE_VERSION=10-jessie
         - NPM_TARGET=coverage
